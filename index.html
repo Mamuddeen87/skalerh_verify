@@ -5,76 +5,344 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Certificate Verification | Skalerhtech Solutions</title>
 <meta name="description" content="Certificate and result verification record for Lukman Nuhu, issued by Skalerhtech Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#102d4f;--blue:#1b4e7a;--ink:#172536;--muted:#657386;--line:#dce4ec;--paper:#fff;--bg:#f2f5f8;--pale:#eaf1f7}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.5}
-header{background:var(--navy);color:#fff;padding:20px 18px} .head{max-width:1050px;margin:auto;display:flex;align-items:center;gap:16px}
-.brand{width:74px;height:74px;object-fit:contain;background:#fff;border-radius:10px;padding:4px}.brandname{font-weight:800;font-size:clamp(18px,3vw,25px);letter-spacing:.2px}.tag{color:#d5e4f2;font-size:12px;letter-spacing:1.4px;text-transform:uppercase}
-main{max-width:1050px;margin:28px auto;padding:0 16px 40px}.status{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:20px}
-.statusdot{width:12px;height:12px;border-radius:50%;background:#d29b26;flex-shrink:0}.status strong{display:block;color:var(--navy)}.status small{color:var(--muted)}
-.hero{display:grid;grid-template-columns:130px 1fr;gap:22px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:24px}
-.portrait{width:130px;height:155px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}h1{margin:0 0 5px;color:var(--navy);font-size:clamp(24px,4vw,34px)}.course{font-size:18px;font-weight:700;margin:0 0 14px}.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.meta div{border-top:1px solid var(--line);padding-top:8px}.label{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted)}.value{font-weight:700;overflow-wrap:anywhere}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 14px}.tabs a{display:inline-block;text-decoration:none;color:var(--navy);font-weight:700;border:1px solid #c8d6e4;background:#fff;padding:10px 15px;border-radius:8px}.tabs a:hover{background:var(--pale)}
-.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px;scroll-margin-top:18px}.panel h2{margin:0;color:var(--navy);font-size:22px}.intro{color:var(--muted);margin:5px 0 18px}.certificate{position:relative;border:8px double var(--navy);padding:clamp(18px,4vw,42px);text-align:center;min-height:480px;background:linear-gradient(135deg,#fff 0%,#f8fbfe 100%)}.cert-logo{width:105px;height:90px;object-fit:contain}.cert-org{font-size:clamp(17px,3vw,25px);font-weight:800;color:var(--navy);letter-spacing:1px}.cert-kicker{font-size:11px;letter-spacing:3px;color:var(--blue);margin-top:16px}.cert-title{font-family:Georgia,serif;color:var(--navy);font-size:clamp(27px,5vw,42px);margin:8px 0}.cert-sub{color:#536579}.cert-student{font-family:Georgia,serif;font-size:clamp(25px,4vw,35px);font-weight:bold;color:#183f67;border-bottom:1px solid #a8bbcd;display:inline-block;padding:0 18px 7px;margin:14px 0}.cert-photo{width:92px;height:105px;object-fit:cover;border:3px solid white;outline:1px solid #b9c9d8;border-radius:3px;margin:12px auto}.cert-foot{display:flex;justify-content:space-between;align-items:end;gap:18px;text-align:left;margin-top:24px}.sign{border-top:1px solid #8294a7;padding-top:7px;min-width:150px;font-size:12px}.qr{width:88px;height:88px;object-fit:contain}.id{font-size:11px;color:#536579;margin-top:10px;overflow-wrap:anywhere}
-.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:480px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line)}th{background:var(--pale);color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.4px}.placeholder{border:1px dashed #b9c9d8;border-radius:10px;background:#f8fbfe;padding:18px;color:var(--muted)}.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}.metric{background:#f5f8fb;border:1px solid var(--line);border-radius:10px;padding:14px}.metric span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase}.metric strong{font-size:20px;color:var(--navy)}.note{font-size:12px;color:var(--muted);margin-top:18px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;padding:11px 15px;cursor:pointer}.btn.secondary{background:#e7eef5;color:var(--navy)}.contact{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px;font-size:13px}.contact a{color:#fff;text-decoration:none}.contact a:hover{text-decoration:underline}.cert-contact{margin-top:18px;font-size:12px;color:#536579}.cert-contact a{color:inherit;text-decoration:none}.contact-panel p{margin:4px 0}.contact-panel a{color:var(--blue);font-weight:700;text-decoration:none}footer a{color:var(--blue);text-decoration:none}footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
-@media(max-width:620px){.hero{grid-template-columns:1fr}.portrait{width:105px;height:125px}.meta{grid-template-columns:1fr 1fr}.panel{padding:14px}.certificate{border-width:5px}.cert-foot{flex-wrap:wrap}.summary{grid-template-columns:1fr}.head{align-items:center}}
-@media print{body{background:#fff}.no-print,header,footer,.status,.hero,.tabs,.intro,.actions,.contact-panel,.contact{display:none!important}main{margin:0;padding:0;max-width:none}.panel{border:0;padding:0;break-after:page}.panel:last-of-type{break-after:auto}.certificate{min-height:95vh}.panel h2{margin:10px 0}.certificate{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+:root{
+  --ink:#0b1f3a; --ink-2:#14304f; --teal:#14788a; --teal-l:#2aa7b8;
+  --gold:#b8945a; --gold-d:#8a6a32; --gold-l:#e6cf94;
+  --paper:#fbf8f1; --bg:#f4f1ea; --card:#ffffff; --line:#e7e1d4; --muted:#6b7686; --text:#1a2638;
+  --serif:'Cormorant Garamond','Cormorant',Georgia,'Times New Roman',serif;
+  --sans:'Inter',-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --gold-grad:linear-gradient(135deg,#8a6a32 0%,#e6cf94 35%,#b8945a 60%,#7a5a26 100%);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ---------- Top bar ---------- */
+.topbar{background:var(--ink);color:#cfd9e6;font-size:12.5px;letter-spacing:.3px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:40px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.topbar a{text-decoration:none;color:#e9eef5}
+.topbar a:hover{color:var(--gold-l)}
+.topbar .links{display:flex;gap:22px;flex-wrap:wrap}
+.topbar .tagline{text-transform:uppercase;letter-spacing:2.4px;font-size:11px;color:var(--gold-l)}
+
+/* ---------- Brand header ---------- */
+.brandbar{background:#fff;border-bottom:1px solid var(--line)}
+.brandbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px}
+.brandbar img{height:64px;width:auto;display:block}
+.badge{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#f2faf8,#e6f4f1);border:1px solid #bfe0d9;color:#0c5b4c;padding:9px 16px 9px 12px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.2px}
+.badge svg{width:20px;height:20px;flex:none}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;background:radial-gradient(1200px 400px at 85% -10%,#1d4a73 0%,transparent 60%),linear-gradient(135deg,#071428 0%,#0b1f3a 55%,#10345a 100%);color:#fff;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 1px,transparent 1px 14px);pointer-events:none}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--gold-grad)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;padding-top:56px;padding-bottom:64px}
+.portrait{position:relative;padding:8px;background:var(--gold-grad);border-radius:6px;box-shadow:0 24px 50px -18px rgba(0,0,0,.6)}
+.portrait img{display:block;width:190px;height:228px;object-fit:cover;border:3px solid #fff;border-radius:2px;background:#fff}
+.eyebrow{font-size:11.5px;letter-spacing:3.2px;text-transform:uppercase;color:var(--gold-l);font-weight:600}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,6vw,64px);line-height:1.02;margin:10px 0 8px;letter-spacing:.2px}
+.hero .course{font-size:clamp(16px,2.2vw,20px);color:#cfe0ee;margin:0 0 28px;font-weight:400}
+.hero .course b{color:#fff;font-weight:600}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid rgba(230,207,148,.35)}
+.meta>div{padding:16px 18px 4px 0}
+.label{font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);font-weight:600}
+.hero .label{color:#9db4cb}
+.value{font-weight:600;font-size:15.5px;overflow-wrap:anywhere}
+.hero .value{color:#fff}
+.mono{font-feature-settings:"tnum";letter-spacing:.6px}
+
+/* ---------- Tabs ---------- */
+.tabs{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+.tabs a{white-space:nowrap;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.4px;color:var(--ink-2);padding:9px 18px;border-radius:999px;border:1px solid transparent;transition:.2s}
+.tabs a:hover{background:#fff;border-color:var(--line)}
+.tabs a.on{background:var(--ink);color:#fff}
+
+/* ---------- Sections ---------- */
+main{padding:46px 0 24px}
+.section{margin-bottom:56px;scroll-margin-top:70px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,4vw,38px);color:var(--ink);margin:0;line-height:1.1}
+.sec-head h2:after{content:"";display:block;width:56px;height:3px;background:var(--gold-grad);margin-top:12px;border-radius:2px}
+.sec-head p{margin:0;color:var(--muted);font-size:14.5px;max-width:460px}
+
+.btn{display:inline-flex;align-items:center;gap:9px;border:0;border-radius:999px;background:var(--ink);color:#fff;font:600 13.5px var(--sans);letter-spacing:.3px;padding:13px 22px;cursor:pointer;text-decoration:none;box-shadow:0 10px 24px -12px rgba(11,31,58,.7);transition:.2s}
+.btn:hover{background:var(--ink-2);transform:translateY(-1px)}
+.btn svg{width:17px;height:17px}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--gold)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+
+/* ---------- Certificate (fixed A4 landscape stage, scaled to fit) ---------- */
+.cert-frame{background:linear-gradient(180deg,#e9e4d7,#ddd6c5);padding:clamp(10px,2.5vw,34px);border-radius:18px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}
+.cert-scale{position:relative;width:100%;overflow:hidden;box-shadow:0 30px 60px -24px rgba(11,31,58,.55),0 6px 14px -6px rgba(0,0,0,.25)}
+.cert{position:absolute;left:0;top:0;width:1123px;height:794px;transform-origin:top left;background:
+  radial-gradient(circle at 50% 45%,#fffefb 0%,#fbf8f1 65%,#f3ecdb 100%);
+  color:var(--ink);overflow:hidden}
+.cert .border{position:absolute;inset:0;width:100%;height:100%}
+.cert .wm{position:absolute;left:50%;top:50%;width:430px;transform:translate(-50%,-50%);opacity:.04;filter:grayscale(.2)}
+.cert .in{position:absolute;inset:100px 120px 106px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.c-top{width:100%;display:flex;justify-content:space-between;align-items:flex-start}
+.c-id{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:#6b7686;line-height:1.7;text-align:left;width:150px;padding-top:6px}
+.c-id b{display:block;color:var(--ink);font-size:11.5px;letter-spacing:1.4px}
+.c-logo{height:100px;width:auto;display:block}
+.c-photo{width:150px;display:flex;justify-content:flex-end}
+.c-photo span{display:block;padding:4px;background:var(--gold-grad)}
+.c-photo img{display:block;width:84px;height:100px;object-fit:cover;border:2px solid #fff}
+.c-kicker{font-size:12px;letter-spacing:6px;text-transform:uppercase;color:var(--teal);font-weight:600;margin-top:10px}
+.c-title{font-family:var(--serif);font-weight:600;font-size:58px;line-height:1.02;color:var(--ink);margin:8px 0 0;letter-spacing:.5px}
+.c-rule{display:flex;align-items:center;gap:12px;margin:12px 0 10px}
+.c-rule i{display:block;width:110px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.c-rule i:last-child{background:linear-gradient(270deg,transparent,var(--gold))}
+.c-rule em{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.c-sub{font-family:var(--serif);font-style:italic;font-size:20px;color:#4a5a70}
+.c-name{font-family:var(--serif);font-style:italic;font-weight:600;font-size:64px;line-height:1.1;color:var(--ink-2);margin:2px 0 0;padding:0 40px 4px;position:relative}
+.c-name:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--gold) 80%,transparent)}
+.c-desc{font-size:14.5px;line-height:1.7;color:#3b4a60;margin:14px 0 0;max-width:640px}
+.c-desc strong{color:var(--ink);font-weight:600}
+.c-facts{display:flex;gap:0;margin-top:14px}
+.c-facts div{padding:0 28px;border-left:1px solid #d9cfb6}
+.c-facts div:first-child{border-left:0}
+.c-facts small{display:block;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:#7b8798;font-weight:600}
+.c-facts b{font-size:14px;color:var(--ink);font-weight:600}
+.c-foot{margin-top:auto;width:100%;display:grid;grid-template-columns:1fr 150px 1fr;align-items:end}
+.c-sign{text-align:center;width:250px}
+.c-sign img{display:block;height:84px;width:auto;margin:0 auto -4px;position:relative;mix-blend-mode:multiply}
+.c-sign .ln{height:1px;background:linear-gradient(90deg,transparent,#8d7c58,transparent);margin-bottom:6px}
+.c-sign b{display:block;font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:700;line-height:1.2}
+.c-sign span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#6b7686}
+.c-seal img{width:128px;height:128px;display:block;margin:0 auto;filter:drop-shadow(0 6px 8px rgba(80,55,10,.35))}
+.c-qr{justify-self:end;display:flex;align-items:center;gap:12px;text-align:left}
+.c-qr img{width:84px;height:84px;display:block;padding:5px;background:#fff;border:1px solid #d9cfb6}
+.c-qr small{display:block;font-size:9.5px;letter-spacing:1.8px;text-transform:uppercase;color:#7b8798;font-weight:600;line-height:1.5}
+.c-qr b{font-size:11px;color:var(--ink);letter-spacing:.8px}
+.c-contact{position:absolute;left:0;right:0;bottom:86px;text-align:center;font-size:10.5px;letter-spacing:1.2px;color:#7b8798}
+
+/* ---------- Results ---------- */
+.result-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:24px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 40px -26px rgba(11,31,58,.35)}
+.mods{padding:8px 28px}
+.mod{display:grid;grid-template-columns:1fr auto;gap:8px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.mod:last-child{border-bottom:0}
+.mod h3{margin:0;font-size:16px;font-weight:600;color:var(--ink)}
+.mod h3 small{display:block;font-size:11px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.mod .sc{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--ink);line-height:1;text-align:right}
+.mod .sc span{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:500}
+.bar{grid-column:1/-1;height:7px;background:#efeadc;border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--teal),var(--teal-l));transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.on-view .bar i{width:var(--w)}
+.sumcard{padding:30px 28px;text-align:center;background:linear-gradient(160deg,#0b1f3a,#10345a);color:#fff;border:0;position:relative;overflow:hidden}
+.sumcard:after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gold-grad)}
+.ring{--p:62.6;width:176px;height:176px;margin:6px auto 16px;border-radius:50%;background:conic-gradient(var(--gold-l) calc(var(--p)*1%),rgba(255,255,255,.12) 0);display:grid;place-items:center;position:relative}
+.ring:before{content:"";position:absolute;inset:11px;border-radius:50%;background:#0d2746}
+.ring div{position:relative;font-family:var(--serif);font-size:46px;font-weight:700;line-height:1}
+.ring small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9db4cb;font-weight:600;margin-top:5px}
+.sumrow{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:#cfe0ee}
+.sumrow b{color:#fff;font-size:17px}
+.note{font-size:12.5px;color:var(--muted);margin:18px 2px 0;max-width:760px}
+
+/* ---------- Contact ---------- */
+.contact-card{padding:30px 32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;gap:26px;align-items:center}
+.contact-card a.v{font-family:var(--serif);font-size:25px;font-weight:600;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.contact-card a.v:hover{color:var(--teal)}
+.contact-card .label{display:block;margin-bottom:4px}
+
+footer{background:var(--ink);color:#aab9cb;text-align:center;font-size:12.5px;padding:34px 20px 38px;position:relative}
+footer:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gold-grad)}
+footer img{height:46px;background:#fff;border-radius:8px;padding:5px 10px;margin-bottom:14px}
+footer a{color:#e9eef5;text-decoration:none}
+footer a:hover{color:var(--gold-l)}
+
+/* ---------- Responsive ---------- */
+@media(max-width:860px){
+  .result-grid{grid-template-columns:1fr}
+  .contact-card{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .hero .wrap{grid-template-columns:1fr;gap:26px;padding-top:38px;padding-bottom:44px;justify-items:start}
+  .portrait img{width:140px;height:168px}
+  .meta{grid-template-columns:1fr 1fr}
+  .brandbar img{height:50px}
+  .badge{font-size:12px;padding:7px 12px 7px 9px}
+  .topbar .tagline{display:none}
+  .mods{padding:4px 18px}
+  .mod .sc{font-size:28px}
+  .contact-card{padding:24px 20px}
+  .contact-card a.v{font-size:20px}
+}
+
+/* ---------- Print: A4 landscape certificate only ---------- */
+@page{size:A4 landscape;margin:0}
+@media print{
+  html,body{background:#fff}
+  .topbar,.brandbar,.hero,.tabs,.sec-head,.actions,.note,footer,#result,#contact{display:none!important}
+  main{padding:0}.wrap{max-width:none;padding:0}
+  .section{margin:0}
+  .cert-frame{padding:0;background:none;border-radius:0;box-shadow:none}
+  .cert-scale{height:794px!important;width:1123px!important;box-shadow:none;overflow:hidden}
+  .cert{transform:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<header><div class="head">
-<img class="brand" src="assets/skalerhtech-logo.png" alt="Skalerhtech Solutions logo">
-<div><div class="brandname">SKALERHTECH SOLUTIONS</div><div class="tag">Technology • Training • Real Impact</div>
-<div class="contact"><a href="tel:+2348034361458">+234 803 436 1458</a><a href="mailto:mamuddeen87@gmail.com">&#9993; mamuddeen87@gmail.com</a></div></div>
-</div></header>
-<main>
-<section class="hero">
-<img class="portrait" src="assets/lukman-photo.jpg" alt="Certificate holder photograph">
-<div><h1>Lukman Nuhu</h1><p class="course">Certificate in Computer Operation</p>
-<div class="meta">
-<div><div class="label">Certificate ID</div><div class="value">SKL-CO-2026-001</div></div>
-<div><div class="label">Issuing organisation</div><div class="value">Skalerhtech Solutions</div></div>
-<div><div class="label">Completion date</div><div class="value">30 August 2026</div></div>
-<div><div class="label">Issue date</div><div class="value">30 September 2026</div></div>
-<div><div class="label">Course duration</div><div class="value">3 months</div></div>
-<div><div class="label">Chief Instructor</div><div class="value">Bello Garba</div></div>
+
+<div class="topbar"><div class="wrap">
+  <span class="tagline">Technology &bull; Training &bull; Real Impact</span>
+  <div class="links"><a href="tel:+2348034361458">+234 803 436 1458</a><a href="mailto:mamuddeen87@gmail.com">mamuddeen87@gmail.com</a></div>
 </div></div>
-</section>
-<nav class="tabs no-print" aria-label="Verification sections"><a href="#certificate">Main Certificate</a><a href="#result">Academic Result</a><a href="#contact">Contact</a></nav>
-<section class="panel" id="certificate">
-<h2>Main Certificate</h2><p class="intro">Preview of the certificate associated with this verification record.</p>
-<div class="certificate">
-<img class="cert-logo" src="assets/skalerhtech-logo.png" alt="Skalerhtech Solutions">
-<div class="cert-org">SKALERHTECH SOLUTIONS</div>
-<div class="cert-kicker">CERTIFICATE OF COMPLETION</div>
-<div class="cert-title">Certificate in<br>Computer Operation</div>
-<div class="cert-sub">This is to certify that</div>
-<div class="cert-student">Lukman Nuhu</div><br>
-<img class="cert-photo" src="assets/lukman-photo.jpg" alt="Lukman Nuhu">
-<p class="cert-sub">has successfully completed the course requirements for<br><strong>Certificate in Computer Operation</strong></p>
-<p class="cert-sub">Completion date: <strong>30 August 2026</strong> &nbsp; • &nbsp; Duration: <strong>3 months</strong></p>
-<div class="cert-foot">
-<div class="sign"><strong>Bello Garba</strong><br>Chief Instructor</div>
-<div style="text-align:center"><img class="qr" src="assets/certificate-qr.png" alt="QR code for certificate verification"><div class="id">ID: SKL-CO-2026-001</div></div>
-<div class="sign"><strong>30 September 2026</strong><br>Date of Issue</div>
-</div>
-<div class="cert-contact">Skalerhtech Solutions &nbsp;•&nbsp; Tel: <a href="tel:+2348034361458">+234 803 436 1458</a> &nbsp;•&nbsp; Email: <a href="mailto:mamuddeen87@gmail.com">mamuddeen87@gmail.com</a></div>
-</div>
-<div class="actions no-print"><button class="btn" onclick="window.print()">Print / Save as PDF</button><button class="btn secondary" onclick="document.getElementById('result').scrollIntoView({behavior:'smooth'})">View academic result</button></div>
-</section>
-<section class="panel" id="result">
-<h2>Academic Result</h2><p class="intro">Module scores for the Certificate in Computer Operation.</p>
-<div class="tablewrap"><table><thead><tr><th>Module / Subject</th><th>Score</th><th>Maximum</th><th>Percentage</th></tr></thead><tbody><tr><td>Introduction to Computer</td><td>62</td><td>100</td><td>62%</td></tr><tr><td>Microsoft Office Word</td><td>59</td><td>100</td><td>59%</td></tr><tr><td>Microsoft Excel</td><td>53</td><td>100</td><td>53%</td></tr><tr><td>Microsoft PowerPoint</td><td>61</td><td>100</td><td>61%</td></tr><tr><td>Introduction to Internet</td><td>78</td><td>100</td><td>78%</td></tr></tbody></table></div>
-<div class="summary"><div class="metric"><span>Total score</span><strong>313 / 500</strong></div><div class="metric"><span>Average</span><strong>62.6%</strong></div></div>
-<p class="note">For privacy and authenticity, only approved academic information is published. Any final public result should match the result sheet issued by Skalerhtech Solutions.</p>
+
+<div class="brandbar"><div class="wrap">
+  <img src="assets/skalerhtech-logo-cropped.png" alt="Skalerhtech Solutions">
+  <div class="badge">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#12805f"/><path d="M7 12.5l3.4 3.4L17 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Certificate record verified
+  </div>
+</div></div>
+
+<section class="hero"><div class="wrap">
+  <div class="portrait"><img src="assets/lukman-photo.jpg" alt="Certificate holder photograph"></div>
+  <div>
+    <div class="eyebrow">Verified holder</div>
+    <h1>Lukman Nuhu</h1>
+    <p class="course"><b>Certificate in Computer Operation</b> &middot; Skalerhtech Solutions</p>
+    <div class="meta">
+      <div><div class="label">Certificate ID</div><div class="value mono">SKL-CO-2026-001</div></div>
+      <div><div class="label">Completion date</div><div class="value">30 August 2026</div></div>
+      <div><div class="label">Issue date</div><div class="value">30 September 2026</div></div>
+      <div><div class="label">Course duration</div><div class="value">3 months</div></div>
+      <div><div class="label">Chief Instructor</div><div class="value">Bello Garba</div></div>
+      <div><div class="label">Issuing organisation</div><div class="value">Skalerhtech Solutions</div></div>
+    </div>
+  </div>
+</div></section>
+
+<nav class="tabs" aria-label="Verification sections"><div class="wrap">
+  <a href="#certificate" class="on">Main Certificate</a><a href="#result">Academic Result</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main><div class="wrap">
+
+<section class="section" id="certificate">
+  <div class="sec-head">
+    <h2>Main Certificate</h2>
+    <p>Preview of the certificate associated with this verification record.</p>
+  </div>
+  <div class="cert-frame">
+    <div class="cert-scale" id="scale">
+      <div class="cert" id="cert">
+        <img class="border" src="assets/cert-border.svg" alt="">
+        <img class="wm" src="assets/skalerhtech-emblem.png" alt="">
+        <div class="in">
+          <div class="c-top">
+            <div class="c-id">Certificate No.<b>SKL-CO-2026-001</b></div>
+            <img class="c-logo" src="assets/skalerhtech-logo-cropped.png" alt="Skalerhtech Solutions">
+            <div class="c-photo"><span><img src="assets/lukman-photo.jpg" alt="Lukman Nuhu"></span></div>
+          </div>
+          <div class="c-kicker">Certificate of Completion</div>
+          <div class="c-title">Certificate in Computer Operation</div>
+          <div class="c-rule"><i></i><em></em><i></i></div>
+          <div class="c-sub">This is to certify that</div>
+          <div class="c-name">Lukman Nuhu</div>
+          <p class="c-desc">has successfully completed all course requirements and assessments for the<br><strong>Certificate in Computer Operation</strong> at Skalerhtech Solutions.</p>
+          <div class="c-facts">
+            <div><small>Completed</small><b>30 August 2026</b></div>
+            <div><small>Duration</small><b>3 Months</b></div>
+            <div><small>Date of Issue</small><b>30 September 2026</b></div>
+          </div>
+          <div class="c-foot">
+            <div class="c-sign">
+              <img src="assets/bello-signature-cropped.png" alt="Signature of Bello Garba">
+              <div class="ln"></div>
+              <b>Bello Garba</b>
+              <span>Chief Instructor</span>
+            </div>
+            <div class="c-seal"><img src="assets/seal.svg" alt="Skalerhtech authenticity seal"></div>
+            <div class="c-qr">
+              <div><small>Scan to verify</small><b>SKL-CO-2026-001</b></div>
+              <img src="assets/certificate-qr.png" alt="QR code for certificate verification">
+            </div>
+          </div>
+        </div>
+        <div class="c-contact">Skalerhtech Solutions &nbsp;&bull;&nbsp; +234 803 436 1458 &nbsp;&bull;&nbsp; mamuddeen87@gmail.com</div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="btn" onclick="window.print()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>Print / Save as PDF</button>
+    <a class="btn ghost" href="#result">View academic result</a>
+  </div>
 </section>
 
-<section class="panel contact-panel" id="contact">
-<h2>Contact Skalerhtech Solutions</h2><p class="intro">For enquiries or to confirm the authenticity of this certificate, please get in touch.</p>
-<p><span class="label">Phone</span><br><a href="tel:+2348034361458">+234 803 436 1458</a></p>
-<p><span class="label">Email</span><br><a href="mailto:mamuddeen87@gmail.com">mamuddeen87@gmail.com</a></p>
+<section class="section" id="result">
+  <div class="sec-head">
+    <h2>Academic Result</h2>
+    <p>Module scores for the Certificate in Computer Operation.</p>
+  </div>
+  <div class="result-grid" id="results">
+    <div class="card mods">
+      <div class="mod"><h3><small>Module 01</small>Introduction to Computer</h3><div class="sc">62<span> / 100</span></div><div class="bar"><i style="--w:62%"></i></div></div>
+      <div class="mod"><h3><small>Module 02</small>Microsoft Office Word</h3><div class="sc">59<span> / 100</span></div><div class="bar"><i style="--w:59%"></i></div></div>
+      <div class="mod"><h3><small>Module 03</small>Microsoft Excel</h3><div class="sc">53<span> / 100</span></div><div class="bar"><i style="--w:53%"></i></div></div>
+      <div class="mod"><h3><small>Module 04</small>Microsoft PowerPoint</h3><div class="sc">61<span> / 100</span></div><div class="bar"><i style="--w:61%"></i></div></div>
+      <div class="mod"><h3><small>Module 05</small>Introduction to Internet</h3><div class="sc">78<span> / 100</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+    </div>
+    <div class="card sumcard">
+      <div class="ring"><div>62.6%<small>Average</small></div></div>
+      <div class="sumrow"><span>Total score</span><b>313 / 500</b></div>
+      <div class="sumrow"><span>Modules completed</span><b>5 of 5</b></div>
+    </div>
+  </div>
+  <p class="note">For privacy and authenticity, only approved academic information is published. Any final public result should match the result sheet issued by Skalerhtech Solutions.</p>
 </section>
-</main>
-<footer>© 2026 Skalerhtech Solutions · Certificate verification preview<br><a href="tel:+2348034361458">+234 803 436 1458</a> · <a href="mailto:mamuddeen87@gmail.com">mamuddeen87@gmail.com</a></footer>
+
+<section class="section" id="contact">
+  <div class="sec-head">
+    <h2>Contact Skalerhtech Solutions</h2>
+    <p>For enquiries or to confirm the authenticity of this certificate, please get in touch.</p>
+  </div>
+  <div class="card contact-card">
+    <div><span class="label">Phone</span><a class="v" href="tel:+2348034361458">+234 803 436 1458</a></div>
+    <div><span class="label">Email</span><a class="v" href="mailto:mamuddeen87@gmail.com">mamuddeen87@gmail.com</a></div>
+    <a class="btn" href="mailto:mamuddeen87@gmail.com?subject=Certificate%20verification%20SKL-CO-2026-001">Send an enquiry</a>
+  </div>
+</section>
+
+</div></main>
+
+<footer>
+  <img src="assets/skalerhtech-logo-cropped.png" alt="Skalerhtech Solutions"><br>
+  &copy; 2026 Skalerhtech Solutions &middot; Certificate verification<br>
+  <a href="tel:+2348034361458">+234 803 436 1458</a> &middot; <a href="mailto:mamuddeen87@gmail.com">mamuddeen87@gmail.com</a>
+</footer>
+
+<script>
+// Scale the fixed 1123x794 certificate to the available width
+(function(){
+  var box=document.getElementById('scale'),cert=document.getElementById('cert');
+  function fit(){var s=box.clientWidth/1123;cert.style.transform='scale('+s+')';box.style.height=(794*s)+'px';}
+  fit();window.addEventListener('resize',fit);window.addEventListener('beforeprint',function(){cert.style.transform='none'});window.addEventListener('afterprint',fit);
+  if(window.ResizeObserver)new ResizeObserver(fit).observe(box);
+})();
+// Animate score bars when visible
+(function(){
+  var r=document.getElementById('results');
+  if(!('IntersectionObserver' in window)){r.classList.add('on-view');return;}
+  new IntersectionObserver(function(e,o){if(e[0].isIntersecting){r.classList.add('on-view');o.disconnect();}},{threshold:.25}).observe(r);
+})();
+// Highlight active tab
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.tabs a'));
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+  links.forEach(function(a){var t=document.querySelector(a.getAttribute('href'));if(t)io.observe(t)});
+})();
+</script>
 </body>
 </html>
