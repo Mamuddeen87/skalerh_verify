@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/verify/SKL-CO-2026-2561AB",
-      "destination": "https://skalerhverify-bellogug-4582s-projects.vercel.app/"
+      "source": "https://skalerhverify-bellogug-4582s-projects.vercel.app/",
+      "destination": "/verify/SKL-CO-2026-2561AB"
     }
   ]
 }
