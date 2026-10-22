@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/verify/:path*",
+      "source": "/verify/SKL-CO-2026-2561AB",
       "destination": "https://skalerhverify.vercel.app/verify/:path*"
     }
   ]
