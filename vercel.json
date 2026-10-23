@@ -1,8 +1,9 @@
 {
-  "rewrites": [
-    {
-      "source": "skalerh.tech",
-      "destination": "/verify/SKL-CO-2026-2561AB"
-    }
+  "routes": [
+    { "src": "^/verify/SKL-CO-2026-2561AB/?$", "dest": "/index.html" },
+    { "src": "^/verify/assets/(.*)$", "dest": "/assets/$1" },
+    { "src": "^/(index\\.html)?$", "status": 404 },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404 }
   ]
 }
