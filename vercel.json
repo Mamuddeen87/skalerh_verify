@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "https://skalerhverify-bellogug-4582s-projects.vercel.app/",
+      "source": "skalerh.tech",
       "destination": "/verify/SKL-CO-2026-2561AB"
     }
   ]
